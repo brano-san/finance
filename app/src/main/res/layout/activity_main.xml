@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toplayout"
+        android:background="@drawable/buttonbelow"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:background="@drawable/buttonbelow" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/bal"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Общий баланс"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="14dp" />
+        <TextView
+            app:layout_constraintTop_toTopOf="@+id/bal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/baldol"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="145 745,67$"
+            android:textSize="40sp"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="14dp" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/baldol"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/pribil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 1768,25$ (12,1%) за день"
+            android:textSize="15sp"
+            android:textColor="@color/green"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/btn_plus" />
+
+        <Button
+            android:background="@drawable/slider"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/pribil"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:text="" />
+        <Button
+            android:background="@drawable/voidslider"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/pribil"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:text="" />
+        <Button
+            android:background="@drawable/voidslider"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/pribil"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="" />
+
+        <Button
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/topbutton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginBottom="20dp"
+            android:text="Активы"
+            android:textSize="14sp"/>
+
+        <Button
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/voidslider"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginBottom="20dp"
+            android:text="NFT коллекции"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:text="Кошелёк"
+            android:padding="0dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_width="@dimen/ButtonBelow"
+            android:layout_height="@dimen/ButtonBelow"
+            android:layout_marginLeft="@dimen/sideBelow"
+            android:layout_marginRight="@dimen/MarginBelow"
+            android:layout_marginBottom="@dimen/MarginBelow"
+            android:background="@drawable/buttonbelow" />
+
+        <Button
+            android:text="Рынок"
+            android:padding="0dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_width="@dimen/ButtonBelow"
+            android:layout_height="@dimen/ButtonBelow"
+            android:layout_marginLeft="@dimen/MarginBelow"
+            android:layout_marginRight="@dimen/MarginBelow"
+            android:layout_marginBottom="@dimen/MarginBelow"
+            android:background="@drawable/buttonbelow" />
+        <Button
+            android:text="Браузер"
+            android:padding="0dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_width="@dimen/ButtonBelow"
+            android:layout_height="@dimen/ButtonBelow"
+            android:layout_marginLeft="@dimen/MarginBelow"
+            android:layout_marginRight="@dimen/MarginBelow"
+            android:layout_marginBottom="@dimen/MarginBelow"
+            android:background="@drawable/buttonbelow" />
+        <Button
+            android:text="Обмен"
+            android:padding="0dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_width="@dimen/ButtonBelow"
+            android:layout_height="@dimen/ButtonBelow"
+            android:layout_marginLeft="@dimen/MarginBelow"
+            android:layout_marginRight="@dimen/MarginBelow"
+            android:layout_marginBottom="@dimen/MarginBelow"
+            android:background="@drawable/buttonbelow" />
+
+        <Button
+            android:text="Настройки"
+            android:padding="0dp"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:layout_width="@dimen/ButtonBelow"
+            android:layout_height="@dimen/ButtonBelow"
+            android:layout_marginRight="@dimen/sideBelow"
+            android:layout_marginLeft="@dimen/MarginBelow"
+            android:layout_marginBottom="@dimen/MarginBelow"
+            android:background="@drawable/buttonbelow" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="399dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toplayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bitok"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@id/photobitok"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/bitcoin"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textbitok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Bitcoin"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toRightOf="@+id/photobitok"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="36 187,43$ + 2, 68%"
+                android:textColor="@color/green"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/photobitok"
+                app:layout_constraintTop_toBottomOf="@id/textbitok"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+            <TextView
+                android:id="@+id/BTC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="0,014 BTC"
+                android:textSize="15sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="50,66 $"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BTC"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="14dp" />
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                app:srcCompat="@android:drawable/bottom_bar"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Etherium"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/bitok">
+
+            <ImageView
+                android:id="@id/photoe"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/bitcoin"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Bitcoin"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toRightOf="@+id/photoe"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="36 187,43$ + 2, 68%"
+                android:textColor="@color/green"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/photoe"
+                app:layout_constraintTop_toBottomOf="@id/texte"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+            <TextView
+                android:id="@+id/E"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="0,014 BTC"
+                android:textSize="15sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="50,66 $"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/E"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="14dp" />
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                app:srcCompat="@android:drawable/bottom_bar"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
